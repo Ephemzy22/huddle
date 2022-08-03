@@ -1,0 +1,150 @@
+
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {
+    background-image: url(/images/bg-desktop.svg);
+    background-color: var(--violet);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: auto;
+    width: 80%;
+    height: 100vh;
+    padding: 2em;
+}
+
+.container{
+    display: flex;
+    width: 100%;
+    margin: auto;
+
+}
+
+.image{
+    
+    max-width: 39rem;
+    margin-left: 2em;
+    margin-bottom: 2em; 
+    width: 50%;
+
+}
+
+.group{
+    margin-left: 2em;
+    margin-top: 3em;
+    font-family: 'Open Sans', sans-serif;  
+}
+
+.group h1{
+    padding-bottom: 1em;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.group p{
+    margin-bottom: 2em;
+    color: aliceblue;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.group a{
+    background-color: white;
+    color: (--violet);
+    padding: 1em 4em;
+    border-radius: 3em;
+    text-decoration: none;
+    font-size: 1.1em;  
+}
+
+.group a:hover{
+    background-color: var(--SoftMagenta);
+    color: white;  
+}
+
+.fa-brands {
+    color: white;
+}
+
+
+#face{
+    font-size: 20px;
+    border-style: solid;
+    padding: 1em;
+    border-radius: 50%
+}
+
+#twit{
+    font-size: 20px;
+    border-style: solid;
+    padding: 1em;
+    border-radius: 50%;
+    margin: 1em;  
+}
+
+#inst{
+    font-size: 20px;
+    border-style: solid;
+    padding: 1em;
+    border-radius: 50%
+}
+
+.icons{
+    text-align: right;
+}
+
+.attribution{
+    text-align: center;  
+}
+@media only screen and (max-width: 1440px){
+    .container{
+        display: flex;
+    }
+    
+
+    .group h1{
+        padding-right: 1em;
+        
+    }
+
+}
+@media only screen and (max-width: 1024px){
+    .group a:hover{
+        background-color: var(--SoftMagenta);
+        color: white;  
+    }
+    
+}
+
+@media only screen and (max-width: 425px){
+    .image{
+        width: 20em;
+        height: 40em;
+    }
+
+}
+
+@media only screen and (max-width: 320px){
+    body{
+        background-image: url(/images/bg-desktop.svg);
+    background-color: var(--violet);
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    }
+
+    .container{
+        display: block;
+    }
+    .group{
+        padding: 1em;
+        align-content: center;
+        width: 25em;
+    }
+}
